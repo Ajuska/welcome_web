@@ -25,7 +25,7 @@ SECRET_KEY = '+5r!_&*vw(ludzh71eeo*c#(0yaehov1inq8xv@9a-1)9k(t_p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://ajuska.pythonanywhere.com']
 
 
 # Application definition
