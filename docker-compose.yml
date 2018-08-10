@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  production_web:
+    container_name: django_server
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/welcome_web
+    ports:
+      - "8000:8000"
+  testing_web:
+    container_name: django_testing_server
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8080
+    volumes:
+      - .:/welcome_web
+    ports:
+      - "8080:8080"
