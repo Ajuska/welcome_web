@@ -22,7 +22,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
 
 
     def setUp(self):
-        driver_path = "/home/andreakopecna/Projects/welcome_web/drivers/geckodriver"
+        driver_path = "/home/andreakopecna/Projects/welcome_web_app/welcome_web/drivers/geckodriver"
         self.browser = webdriver.Firefox(executable_path=driver_path)
         self.browser.implicitly_wait(3)
 
@@ -83,7 +83,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
         ## We use a new browser session to make sure that no information of
         ## Edith's is comming through from cookies TestCase
         self.browser.quit()
-        driver_path = "/home/andreakopecna/Projects/welcome_web/drivers/geckodriver"
+        driver_path = "/home/andreakopecna/Projects/welcome_web_app/welcome_web/drivers/geckodriver"
         self.browser = webdriver.Firefox(executable_path=driver_path)
 
         # Francis visits the home page. There is no sign of Edith's lists
